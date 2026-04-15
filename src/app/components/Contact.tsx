@@ -1,36 +1,24 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const contactInfo = [
   {
     icon: Mail,
     label: "邮箱",
-    value: "contact@example.com",
-    href: "mailto:contact@example.com",
+    value: "wind4162001@163.com",
+    href: "mailto:wind4162001@163.com",
   },
   {
     icon: Phone,
     label: "电话",
-    value: "+86 138 0000 0000",
-    href: "tel:+8613800000000",
+    value: "15871321407",
+    href: "tel:15871321407",
   },
   {
     icon: MapPin,
     label: "位置",
-    value: "上海 · 中国",
+    value: "深圳 · 中国",
     href: "#",
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "linkedin.com/in/mingyuan",
-    href: "https://linkedin.com",
-  },
-  {
-    icon: Github,
-    label: "GitHub",
-    value: "github.com/mingyuan",
-    href: "https://github.com",
   },
 ];
 
@@ -139,9 +127,9 @@ export function Contact() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-16 pt-8 border-t border-emerald-500/20 text-center text-gray-400"
+          className="mt-28 pt-8 border-t border-emerald-500/20 text-center text-gray-400"
         >
-          <p>© 2026 张明远 · 产品经理. All rights reserved.</p>
+          <p>© 2026 刘玉琴 · 产品经理. All rights reserved.</p>
         </motion.div>
       </div>
     </section>
