@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
 
 export function Hero() {
   const scrollToAbout = () => {
@@ -24,7 +24,7 @@ export function Hero() {
           </motion.div>
           
           <h1 className="text-6xl md:text-8xl mb-6 bg-gradient-to-r from-emerald-400 via-green-300 to-emerald-500 bg-clip-text text-transparent">
-            张明远
+            刘玉琴
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
@@ -40,26 +40,10 @@ export function Hero() {
             transition={{ delay: 0.6 }}
           >
             <a 
-              href="mailto:contact@example.com"
+              href="mailto:wind4162001@163.com"
               className="p-3 border border-emerald-500/30 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/20 transition-all duration-300 group"
             >
               <Mail className="w-6 h-6 text-emerald-400 group-hover:scale-110 transition-transform" />
-            </a>
-            <a 
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 border border-emerald-500/30 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/20 transition-all duration-300 group"
-            >
-              <Linkedin className="w-6 h-6 text-emerald-400 group-hover:scale-110 transition-transform" />
-            </a>
-            <a 
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 border border-emerald-500/30 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/20 transition-all duration-300 group"
-            >
-              <Github className="w-6 h-6 text-emerald-400 group-hover:scale-110 transition-transform" />
             </a>
           </motion.div>
           
