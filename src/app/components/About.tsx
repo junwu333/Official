@@ -3,10 +3,10 @@ import { Target, Users, TrendingUp, Award } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const stats = [
-  { icon: Target, label: "成功产品", value: "15+" },
-  { icon: Users, label: "服务用户", value: "500万+" },
+  { icon: Target, label: "成功产品", value: "5+" },
+  { icon: Users, label: "服务用户", value: "100万+" },
   { icon: TrendingUp, label: "增长率", value: "120%" },
-  { icon: Award, label: "行业奖项", value: "8" },
+  { icon: Award, label: "行业奖项", value: "2" },
 ];
 
 export function About() {
@@ -50,7 +50,7 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300 leading-relaxed">
-              拥有<span className="text-emerald-400">8年+</span>产品管理经验，专注于B2B SaaS和金融科技领域。
+              拥有<span className="text-emerald-400">3+年</span>产品管理经验，专注于B2B SaaS和金融科技领域。
               擅长将复杂的业务需求转化为优雅的产品解决方案。
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">

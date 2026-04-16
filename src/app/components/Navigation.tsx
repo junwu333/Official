@@ -51,7 +51,7 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               onClick={() => scrollToSection('#hero')}
             >
-              张明远
+              刘玉琴
             </motion.div>
 
             {/* Desktop Navigation */}
