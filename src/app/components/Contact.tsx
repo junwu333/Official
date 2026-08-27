@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Download, Mail, MapPin, Phone } from "lucide-react";
 
 const contactInfo = [
   {
@@ -49,8 +49,8 @@ export function Contact() {
             <div>
               <h3 className="text-3xl text-emerald-400 mb-4">让我们一起创造价值</h3>
               <p className="text-lg text-gray-300 leading-relaxed">
-                如果您正在寻找一位经验丰富的产品经理，或者想要讨论产品相关的话题，
-                欢迎随时联系我。我很乐意与您交流，探讨如何通过产品创新为用户和业务创造价值。
+                如果您正在寻找一位具备 AI 产品落地经验的产品经理，或者想探讨数字人、智能体等 AI 产品方向，
+                欢迎随时联系我。我很乐意与您交流，共同探索 AI 产品如何为用户和业务创造价值。
               </p>
             </div>
 
@@ -75,6 +75,21 @@ export function Contact() {
                 </motion.a>
               ))}
             </div>
+
+            <motion.a
+              href="resume.pdf"
+              download="刘玉琴-3年产品经理.pdf"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-emerald-600 to-green-600 rounded-xl text-white hover:shadow-lg hover:shadow-emerald-500/50 transition-all duration-300"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Download className="w-5 h-5" />
+              下载完整简历 PDF
+            </motion.a>
           </motion.div>
 
           <motion.div

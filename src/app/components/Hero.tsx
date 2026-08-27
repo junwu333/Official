@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, Download, Mail } from "lucide-react";
 
 export function Hero() {
   const scrollToAbout = () => {
@@ -20,7 +20,7 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="text-emerald-400 text-sm tracking-wide">产品经理 · 用户体验设计师</span>
+            <span className="text-emerald-400 text-sm tracking-wide">产品经理 · AI 产品方向</span>
           </motion.div>
           
           <h1 className="text-6xl md:text-8xl mb-6 bg-gradient-to-r from-emerald-400 via-green-300 to-emerald-500 bg-clip-text text-transparent">
@@ -28,9 +28,9 @@ export function Hero() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-            用数据驱动决策，以用户为中心设计产品
+            3 年互联网产品经理 · 专注 AI 数字人与智能体产品
             <br />
-            <span className="text-emerald-400">打造有影响力的数字体验</span>
+            <span className="text-emerald-400">主导 AI 数字人平台从 0 到 1，推动多语言出海商业化落地</span>
           </p>
           
           <motion.div
@@ -39,23 +39,48 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <a 
+            <a
               href="mailto:wind4162001@163.com"
               className="p-3 border border-emerald-500/30 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/20 transition-all duration-300 group"
             >
               <Mail className="w-6 h-6 text-emerald-400 group-hover:scale-110 transition-transform" />
             </a>
+            <a
+              href="resume.pdf"
+              download="刘玉琴-3年产品经理.pdf"
+              className="p-3 border border-emerald-500/30 rounded-lg bg-emerald-500/5 hover:bg-emerald-500/20 transition-all duration-300 group"
+              title="下载简历 PDF"
+            >
+              <Download className="w-6 h-6 text-emerald-400 group-hover:scale-110 transition-transform" />
+            </a>
           </motion.div>
-          
-          <motion.button
-            onClick={scrollToAbout}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-600 to-green-600 rounded-full text-white hover:shadow-lg hover:shadow-emerald-500/50 transition-all duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+
+          <motion.div
+            className="flex flex-wrap gap-4 justify-center items-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
           >
-            了解更多
-            <ArrowDown className="w-5 h-5" />
-          </motion.button>
+            <motion.a
+              href="resume.pdf"
+              download="刘玉琴-3年产品经理.pdf"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-600 to-green-600 rounded-full text-white hover:shadow-lg hover:shadow-emerald-500/50 transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              下载简历
+              <Download className="w-5 h-5" />
+            </motion.a>
+            <motion.button
+              onClick={scrollToAbout}
+              className="inline-flex items-center gap-2 px-8 py-4 border border-emerald-500/40 rounded-full text-emerald-400 hover:bg-emerald-500/10 transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              了解更多
+              <ArrowDown className="w-5 h-5" />
+            </motion.button>
+          </motion.div>
         </motion.div>
       </div>
       

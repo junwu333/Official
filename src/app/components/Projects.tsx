@@ -1,28 +1,33 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const projects = [
   {
-    title: "智能数据分析平台",
-    description: "为企业提供实时数据分析和可视化解决方案，帮助决策者快速洞察业务趋势。",
-    tags: ["SaaS", "数据分析", "AI"],
-    image: "https://images.unsplash.com/photo-1708577907839-1240466aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwcm9kdWN0JTIwZGVzaWdufGVufDF8fHx8MTc3NDYwNTk1MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    metrics: "用户增长 200%，客单价提升 150%",
+    title: "哇超智能 · AI 数字人分身 + 智能体 AI Agent",
+    company: "智变未来科技有限公司",
+    period: "2025.8 - 2026.7",
+    description:
+      "面向 B 端企业客户提供低成本、高效率的数字人分身搭建及 C/B 端智能体服务，涵盖数字人形象生成、唇形驱动、语音克隆、知识库问答及多语言出海等场景，并探索东南亚市场商业化路径。",
+    tags: ["AI 数字人", "AI Agent", "RAG", "多语言出海"],
+    metrics: "训练成本节省 30%，累计创建 300+ 数字人，服务 10 家企业客户，响应准确率提升至 90%",
   },
   {
-    title: "企业协作工具",
-    description: "一站式团队协作平台，整合项目管理、文档协作和即时通讯功能。",
-    tags: ["协作工具", "B2B", "项目管理"],
-    image: "https://images.unsplash.com/photo-1614020661498-fef5b2293108?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNobm9sb2d5JTIwaW50ZXJmYWNlfGVufDF8fHx8MTc3NDU2NDM3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    metrics: "日活用户 10万+，付费转化率 25%",
+    title: "Yunboat · 智能 AI 翻译",
+    company: "奇迅达科技有限公司",
+    period: "2024.10 - 2025.7",
+    description:
+      "基于蓝牙设备资源与翻译市场前景，从翻译板块进行市场化布局。负责设备绑定、一键翻译、同声传译、AI 助手、面对面翻译、离线翻译等核心模块，支持定制化与多样化翻译场景。",
+    tags: ["AI 翻译", "蓝牙设备", "同声传译", "0-1 落地"],
+    metrics: "提供 200+ 种语言，3 家客户私有化定制，蓝牙翻译设备售卖 10w 台，场景准确率 90%",
   },
   {
-    title: "金融风控系统",
-    description: "基于机器学习的智能风控平台，实时监测交易风险，保障资金安全。",
-    tags: ["金融科技", "风控", "机器学习"],
-    image: "https://images.unsplash.com/photo-1591201417943-d82df759897d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwbWFuYWdlciUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzQ2MDU5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    metrics: "风险识别准确率 98.5%",
+    title: "KOLIBRI MALL · 电商系统",
+    company: "祺祾科技有限公司",
+    period: "2023.10 - 2024.10",
+    description:
+      "面向马来西亚市场打造的电商系统，通过盲盒抽奖、转盘抽奖、许愿抽奖等方式吸引用户。负责商品、订单、用户管理、抽奖管理、代理商等核心模块的整体规划与迭代。",
+    tags: ["跨境电商", "抽奖营销", "代理商体系"],
+    metrics: "优化用户体验提升转化率，改善代理商数据把控与用户管理能力",
   },
 ];
 
@@ -52,18 +57,15 @@ export function Projects() {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="grid md:grid-cols-2 gap-8 items-center p-8 border border-emerald-500/20 rounded-2xl bg-black/40 backdrop-blur-sm hover:border-emerald-500/50 transition-all duration-300">
-                <div className={`relative overflow-hidden rounded-xl ${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-green-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                  <ImageWithFallback
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 object-cover rounded-xl border border-emerald-500/30"
-                  />
-                </div>
-
+              <div className="grid md:grid-cols-1 gap-8 items-center p-8 border border-emerald-500/20 rounded-2xl bg-black/40 backdrop-blur-sm hover:border-emerald-500/50 transition-all duration-300">
                 <div className="space-y-4">
-                  <h3 className="text-3xl text-emerald-400">{project.title}</h3>
+                  <div>
+                    <h3 className="text-3xl text-emerald-400">{project.title}</h3>
+                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-400">
+                      <span>{project.company}</span>
+                      <span className="text-emerald-500/70">{project.period}</span>
+                    </div>
+                  </div>
                   <p className="text-gray-300 leading-relaxed">{project.description}</p>
                   
                   <div className="flex flex-wrap gap-2">

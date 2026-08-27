@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { Target, Users, TrendingUp, Award } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Target, Users, Globe, Bot } from "lucide-react";
 
 const stats = [
-  { icon: Target, label: "成功产品", value: "5+" },
-  { icon: Users, label: "服务用户", value: "100万+" },
-  { icon: TrendingUp, label: "增长率", value: "120%" },
-  { icon: Award, label: "行业奖项", value: "2" },
+  { icon: Target, label: "产品经验", value: "3年+" },
+  { icon: Users, label: "服务企业客户", value: "10+" },
+  { icon: Globe, label: "语言适配", value: "10种" },
+  { icon: Bot, label: "数字人创建", value: "300+" },
 ];
 
 export function About() {
@@ -25,23 +24,7 @@ export function About() {
           <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-green-500 mb-12" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-green-500 rounded-2xl opacity-20 blur-xl" />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1591201417943-d82df759897d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwbWFuYWdlciUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzQ2MDU5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Product Manager Workspace"
-                className="relative rounded-2xl border border-emerald-500/30 w-full h-96 object-cover"
-              />
-            </div>
-          </motion.div>
-
+        <div className="grid md:grid-cols-1 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -50,12 +33,13 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300 leading-relaxed">
-              拥有<span className="text-emerald-400">3+年</span>产品管理经验，专注于B2B SaaS和金融科技领域。
-              擅长将复杂的业务需求转化为优雅的产品解决方案。
+              拥有<span className="text-emerald-400">3 年</span>互联网产品经理工作经验，能独立承担产品规划工作，
+              善于项目分解、目标管理与资源调配。
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              通过数据分析和用户研究，成功推动多个产品从0到1，实现用户增长和商业价值的双赢。
-              热衷于构建高效的产品团队，建立完善的产品管理流程。
+              近一年专注 <span className="text-emerald-400">AI 数字人平台与 AI Agent 产品方向</span>，
+              覆盖大语言模型应用、知识库构建、智能体工作流编排等 AI 产品核心领域，具备 ToB/ToC 双端产品设计能力，
+              能独立完成项目 0-1 开发落地。
             </p>
             
             <div className="grid grid-cols-2 gap-6 pt-6">

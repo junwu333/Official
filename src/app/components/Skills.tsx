@@ -1,67 +1,67 @@
 import { motion } from "framer-motion";
 import { 
-  Lightbulb, 
+  Bot, 
   LineChart, 
-  Users, 
-  Code, 
+  PenTool, 
+  Cpu, 
   Presentation, 
   Target,
-  Cpu,
-  PenTool
+  Lightbulb,
+  Users
 } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "产品策略",
-    icon: Target,
+    title: "AI 产品专项",
+    icon: Bot,
     skills: [
-      { name: "产品规划", level: 95 },
-      { name: "市场分析", level: 90 },
-      { name: "竞品分析", level: 92 },
-      { name: "商业模式", level: 88 },
+      { name: "AI 数字人平台", level: 95 },
+      { name: "大语言模型应用", level: 90 },
+      { name: "RAG 架构设计", level: 88 },
+      { name: "Prompt 调优", level: 92 },
     ],
   },
   {
-    title: "数据分析",
-    icon: LineChart,
+    title: "产品通用能力",
+    icon: Target,
     skills: [
-      { name: "数据分析", level: 93 },
-      { name: "A/B测试", level: 90 },
-      { name: "用户研究", level: 91 },
-      { name: "增长策略", level: 89 },
+      { name: "市场调研", level: 93 },
+      { name: "竞品分析", level: 91 },
+      { name: "PRD 撰写", level: 94 },
+      { name: "数据分析", level: 89 },
     ],
   },
   {
     title: "设计能力",
     icon: PenTool,
     skills: [
-      { name: "用户体验", level: 94 },
-      { name: "原型设计", level: 90 },
-      { name: "交互设计", level: 88 },
-      { name: "视觉审美", level: 85 },
+      { name: "高保真原型", level: 92 },
+      { name: "Mastergo", level: 90 },
+      { name: "Figma / Axure", level: 91 },
+      { name: "UI 设计规范", level: 88 },
     ],
   },
   {
     title: "技术理解",
     icon: Cpu,
     skills: [
-      { name: "技术架构", level: 82 },
-      { name: "API设计", level: 85 },
-      { name: "敏捷开发", level: 90 },
-      { name: "技术评估", level: 87 },
+      { name: "大模型原理", level: 85 },
+      { name: "API 调用逻辑", level: 87 },
+      { name: "AIGC 工具应用", level: 90 },
+      { name: "vibe coding", level: 88 },
     ],
   },
 ];
 
 const tools = [
-  { name: "Figma", icon: PenTool },
-  { name: "Jira", icon: Target },
-  { name: "Analytics", icon: LineChart },
-  { name: "Notion", icon: Lightbulb },
-  { name: "Miro", icon: Users },
-  { name: "SQL", icon: Code },
-  { name: "Keynote", icon: Presentation },
-  { name: "Python", icon: Cpu },
+  { name: "Mastergo", icon: PenTool },
+  { name: "Axure", icon: Target },
+  { name: "Figma", icon: Lightbulb },
+  { name: "Visio", icon: LineChart },
+  { name: "XMind", icon: Users },
+  { name: "ProcessOn", icon: Presentation },
+  { name: "墨刀", icon: PenTool },
+  { name: "AI 编程工具", icon: Cpu },
 ];
 
 export function Skills() {
